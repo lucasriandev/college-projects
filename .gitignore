@@ -1,0 +1,9 @@
+# Ignorar ficheiros executáveis do Windows
+*.exe
+
+# Ignorar pastas geradas pelo VS Code
+.vscode/
+
+# Ignorar ficheiros temporários do sistema
+[Dd]esktop.ini
+Thumbs.db
