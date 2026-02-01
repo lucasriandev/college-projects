@@ -11,4 +11,5 @@ struct Territorio
 int main(){
 
     struct Territorio mapa[5];    
-}
+    printf("SISTEMA");
+};
