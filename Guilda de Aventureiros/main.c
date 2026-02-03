@@ -53,12 +53,16 @@ int main(){
     int encontrou = 0;
 
     for(i = 0; i < 3; i++){
+        
         if(strcmp(novos[i].classe, busca) == 0){
             printf("ACHEI -> Nome: %s | Nivel %d\n",
             novos[i].nome,
             novos[i].nivel
             );
             encontrou = 1;
+            /*"Se ( if ) o crachá do herói atual (novos[i].classe) 
+        comparado com o que eu procuro (busca) 
+        tiver zero diferenças (== 0), então..."*/
         }
         }
         if(encontrou == 0){
