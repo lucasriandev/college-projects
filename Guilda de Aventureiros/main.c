@@ -14,6 +14,8 @@ int main(){
     struct Heroi novos[3];
     int i;
 
+    char busca[20];
+
     printf("CADASTRO DE HEROIS! \n");
     printf("Escolha seu nome, sua classe (Ex: Mago, Guerreiro ou Arqueiro \n");
 
@@ -40,5 +42,28 @@ int main(){
         );
 
     }
+
+    printf("\n=== Sistema de busca ===\n");    
+    printf("Qual classe deseja filtar? ");
+    scanf(" %19s", busca);
+
+    printf("\nProcurando por seu heroi da classe '%s'...\n", busca);
+    printf("------------------------------------");
+
+    int encontrou = 0;
+
+    for(i = 0; i < 3; i++){
+        if(strcmp(novos[i].classe, busca) == 0){
+            printf("ACHEI -> Nome: %s | Nivel %d\n",
+            novos[i].nome,
+            novos[i].nivel
+            );
+            encontrou = 1;
+        }
+        }
+        if(encontrou == 0){
+            printf("Nenhum heroi dessa classe foi encontrado. \n");
+    }
+
     return 0;
 };
